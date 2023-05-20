@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        .red {
+            color: red;
+        }
+
+        .crossed {
+            text-decoration: line-through;
+        }
+    </style>
+    <script src="app6.js"></script>
+</head>
+<body>
+    <div ng-controller="myController">
+        <label>
+            <input type="checkbox" ng-model="checkbox1" ng-change="change()"> Додати червоний колір
+        </label>
+        <label>
+            <input type="checkbox" ng-model="checkbox2" ng-change="change()"> Перекреслити текст
+        </label>
+        <p ng-class="{red: checkbox1, crossed: checkbox2}">Текст абзацу</p>
+    </div>
+    <a href="index.html">На головну</a>
+</body>
+</html>

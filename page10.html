@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app9.js"></script>
+</head>
+<body ng-controller="myCtrl">
+    <label>
+        Виберіть країну:
+        <select ng-model="selectedCountry" ng-options="country.name for country in countries" ng-change="updateCities()"></select>
+    </label>
+    <label>
+        Виберіть місто:
+        <select ng-model="selectedCity" ng-options="city.name for city in selectedCountry.cities"></select>
+    </label>
+    <p></p>
+    <a href="index.html">На головну</a>
+</body>
+</html>

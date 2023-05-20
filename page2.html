@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app1.js"></script>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        <label>
+            <input type="checkbox" ng-model="showParagraph" checked> Показати/сховати абзац
+        </label>
+        <p ng-show="showParagraph">Це текст, який буде схований або показаний в залежності від стану чекбокса.</p>
+    </div>
+
+    <a href="index.html">На головну</a>
+</body>
+</html>

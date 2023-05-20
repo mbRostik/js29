@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app7.js"></script>
+</head>
+<body>
+    <div ng-controller="myCtrl">
+        <select ng-model="selectedCountry" ng-options="country for country in countries">
+            <option value="">Оберіть країну</option>
+        </select>
+        <p>Ви обрали: {{selectedCountry}}</p>
+    </div>
+    <a href="index.html">На головну</a>
+</body>
+</html>
